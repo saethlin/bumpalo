@@ -1,3 +1,4 @@
+#![cfg(not(miri))]
 use bumpalo::Bump;
 use quickcheck::{quickcheck, Arbitrary, Gen};
 use std::mem;
